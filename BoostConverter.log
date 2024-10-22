@@ -1,0 +1,327 @@
+Circuit: * C:\Users\vivia\Projekt_MA\von Caroline\Simulationsmodell\BoostConverter.asc
+
+C2: Increased Cpar to 1.2e-011
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 1.1391
+vernier = 0.03125
+vernier = 0.015625
+Gmin = 1.08718
+vernier = 0.0208333
+vernier = 0.0104167
+Gmin = 1.06065
+vernier = 0.00520833
+vernier = 0.00694444
+vernier = 0.00347222
+Gmin = 1.05377
+vernier = 0.00462963
+vernier = 0.00231481
+Gmin = 1.04649
+vernier = 0.00308642
+vernier = 0.00154321
+Gmin = 1.04145
+vernier = 0.00205761
+vernier = 0.00274348
+Gmin = 1.03633
+vernier = 0.00137174
+vernier = 0.00182899
+vernier = 0.000914493
+Gmin = 1.03479
+vernier = 0.00121932
+vernier = 0.00162576
+Gmin = 1.03178
+vernier = 0.000812882
+vernier = 0.00108384
+Gmin = 1.03003
+vernier = 0.00144512
+vernier = 0.000722562
+vernier = 0.000963415
+Gmin = 1.0283
+vernier = 0.000481708
+vernier = 0.000642277
+Gmin = 1.02726
+vernier = 0.000856369
+vernier = 0.000428184
+vernier = 0.000570912
+Gmin = 1.02624
+vernier = 0.000761216
+vernier = 0.000570912
+Gmin = 1.02507
+vernier = 0.000761216
+vernier = 0.000570912
+vernier = 0.000761216
+Gmin = 1.02385
+vernier = 0.000570912
+vernier = 0.000428184
+vernier = 0.000570912
+Gmin = 1.0232
+vernier = 0.000428184
+vernier = 0.000570912
+vernier = 0.000428184
+Gmin = 1.02258
+vernier = 0.000570912
+vernier = 0.000428184
+Gmin = 1.02171
+vernier = 0.000570911
+vernier = 0.000428184
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+.step amp=1.8 phi=-150
+Heightened Def Con from 4.27192e-008 to 4.27192e-008
+Heightened Def Con from 1.72435e-007 to 1.72435e-007
+Heightened Def Con from 1.88745e-007 to 1.88745e-007
+Heightened Def Con from 2.22079e-007 to 2.22079e-007
+Heightened Def Con from 2.88741e-007 to 2.88741e-007
+Heightened Def Con from 3.05769e-007 to 3.05769e-007
+Heightened Def Con from 3.88745e-007 to 3.88745e-007
+Heightened Def Con from 4.0577e-007 to 4.0577e-007
+Heightened Def Con from 4.55419e-007 to 4.55419e-007
+Heightened Def Con from 4.55419e-007 to 4.55419e-007
+Heightened Def Con from 5.05762e-007 to 5.05762e-007
+Heightened Def Con from 5.71913e-007 to 5.71913e-007
+Heightened Def Con from 5.88592e-007 to 5.88592e-007
+Heightened Def Con from 6.21893e-007 to 6.21893e-007
+Heightened Def Con from 7.05008e-007 to 7.05008e-007
+Heightened Def Con from 7.21906e-007 to 7.21906e-007
+Heightened Def Con from 7.71885e-007 to 7.71885e-007
+Heightened Def Con from 8.05405e-007 to 8.05405e-007
+Heightened Def Con from 8.21898e-007 to 8.21898e-007
+Heightened Def Con from 8.55055e-007 to 8.55055e-007
+Heightened Def Con from 8.55055e-007 to 8.55055e-007
+Heightened Def Con from 9.0504e-007 to 9.0504e-007
+Heightened Def Con from 9.21922e-007 to 9.21922e-007
+Heightened Def Con from 1.05527e-006 to 1.05527e-006
+Heightened Def Con from 1.08877e-006 to 1.08877e-006
+Heightened Def Con from 1.12207e-006 to 1.12207e-006
+Heightened Def Con from 1.17243e-006 to 1.17243e-006
+Heightened Def Con from 1.20576e-006 to 1.20576e-006
+Heightened Def Con from 1.22208e-006 to 1.22208e-006
+Heightened Def Con from 1.27242e-006 to 1.27242e-006
+Heightened Def Con from 1.33909e-006 to 1.33909e-006
+Heightened Def Con from 1.38875e-006 to 1.38875e-006
+Heightened Def Con from 1.40577e-006 to 1.40577e-006
+Heightened Def Con from 1.43909e-006 to 1.43909e-006
+Heightened Def Con from 1.47243e-006 to 1.47243e-006
+Heightened Def Con from 1.5887e-006 to 1.5887e-006
+Heightened Def Con from 1.6389e-006 to 1.6389e-006
+Heightened Def Con from 1.67224e-006 to 1.67224e-006
+Heightened Def Con from 1.70557e-006 to 1.70557e-006
+Heightened Def Con from 1.72218e-006 to 1.72218e-006
+Heightened Def Con from 1.73889e-006 to 1.73889e-006
+Heightened Def Con from 1.77223e-006 to 1.77223e-006
+Heightened Def Con from 1.80555e-006 to 1.80555e-006
+Heightened Def Con from 1.82216e-006 to 1.82216e-006
+Heightened Def Con from 1.83889e-006 to 1.83889e-006
+Heightened Def Con from 1.85549e-006 to 1.85549e-006
+Heightened Def Con from 1.87222e-006 to 1.87222e-006
+Heightened Def Con from 1.88882e-006 to 1.88882e-006
+Heightened Def Con from 1.90556e-006 to 1.90556e-006
+Heightened Def Con from 1.93889e-006 to 1.93889e-006
+Heightened Def Con from 1.97222e-006 to 1.97222e-006
+Heightened Def Con from 1.98881e-006 to 1.98881e-006
+Heightened Def Con from 2.04135e-006 to 2.04135e-006
+Heightened Def Con from 2.07223e-006 to 2.07223e-006
+Heightened Def Con from 2.08878e-006 to 2.08878e-006
+Heightened Def Con from 2.13909e-006 to 2.13909e-006
+Heightened Def Con from 2.15541e-006 to 2.15541e-006
+Heightened Def Con from 2.20576e-006 to 2.20576e-006
+Heightened Def Con from 2.25541e-006 to 2.25541e-006
+Heightened Def Con from 2.30577e-006 to 2.30577e-006
+Heightened Def Con from 2.32208e-006 to 2.32208e-006
+Heightened Def Con from 2.35542e-006 to 2.35542e-006
+Heightened Def Con from 2.38875e-006 to 2.38875e-006
+Heightened Def Con from 2.40577e-006 to 2.40577e-006
+Heightened Def Con from 2.43909e-006 to 2.43909e-006
+Heightened Def Con from 2.47243e-006 to 2.47243e-006
+Heightened Def Con from 2.50576e-006 to 2.50576e-006
+Heightened Def Con from 2.58875e-006 to 2.58875e-006
+Heightened Def Con from 2.62228e-006 to 2.62228e-006
+Heightened Def Con from 2.63889e-006 to 2.63889e-006
+Heightened Def Con from 2.65555e-006 to 2.65555e-006
+Heightened Def Con from 2.73885e-006 to 2.73885e-006
+Heightened Def Con from 2.75548e-006 to 2.75548e-006
+Heightened Def Con from 2.77219e-006 to 2.77219e-006
+Heightened Def Con from 2.7888e-006 to 2.7888e-006
+Heightened Def Con from 2.7888e-006 to 2.7888e-006
+Heightened Def Con from 2.80552e-006 to 2.80552e-006
+Heightened Def Con from 2.88881e-006 to 2.88881e-006
+Heightened Def Con from 2.9722e-006 to 2.9722e-006
+Heightened Def Con from 2.98881e-006 to 2.98881e-006
+Heightened Def Con from 3.07224e-006 to 3.07224e-006
+Heightened Def Con from 3.08879e-006 to 3.08879e-006
+Heightened Def Con from 3.12208e-006 to 3.12208e-006
+Heightened Def Con from 3.1391e-006 to 3.1391e-006
+Heightened Def Con from 3.2391e-006 to 3.2391e-006
+Heightened Def Con from 3.25542e-006 to 3.25542e-006
+Heightened Def Con from 3.27243e-006 to 3.27243e-006
+Heightened Def Con from 3.28875e-006 to 3.28875e-006
+Heightened Def Con from 3.30576e-006 to 3.30576e-006
+Heightened Def Con from 3.35542e-006 to 3.35542e-006
+Heightened Def Con from 3.42208e-006 to 3.42208e-006
+Heightened Def Con from 3.50577e-006 to 3.50577e-006
+Heightened Def Con from 3.55553e-006 to 3.55553e-006
+Heightened Def Con from 3.6058e-006 to 3.6058e-006
+Heightened Def Con from 3.62231e-006 to 3.62231e-006
+Heightened Def Con from 3.68883e-006 to 3.68883e-006
+Heightened Def Con from 3.77217e-006 to 3.77217e-006
+Heightened Def Con from 3.7888e-006 to 3.7888e-006
+Heightened Def Con from 3.80551e-006 to 3.80551e-006
+Heightened Def Con from 3.82213e-006 to 3.82213e-006
+Heightened Def Con from 3.85546e-006 to 3.85546e-006
+Heightened Def Con from 3.93886e-006 to 3.93886e-006
+Heightened Def Con from 3.98881e-006 to 3.98881e-006
+Heightened Def Con from 4.04139e-006 to 4.04139e-006
+Heightened Def Con from 4.08879e-006 to 4.08879e-006
+Heightened Def Con from 4.15542e-006 to 4.15542e-006
+Heightened Def Con from 4.18875e-006 to 4.18875e-006
+Heightened Def Con from 4.22208e-006 to 4.22208e-006
+Heightened Def Con from 4.2391e-006 to 4.2391e-006
+Heightened Def Con from 4.25542e-006 to 4.25542e-006
+Heightened Def Con from 4.27243e-006 to 4.27243e-006
+Heightened Def Con from 4.28875e-006 to 4.28875e-006
+Heightened Def Con from 4.30576e-006 to 4.30576e-006
+Heightened Def Con from 4.35542e-006 to 4.35542e-006
+Heightened Def Con from 4.37243e-006 to 4.37243e-006
+Heightened Def Con from 4.42209e-006 to 4.42209e-006
+Heightened Def Con from 4.42209e-006 to 4.42209e-006
+Heightened Def Con from 4.4391e-006 to 4.4391e-006
+Heightened Def Con from 4.48875e-006 to 4.48875e-006
+Heightened Def Con from 4.50577e-006 to 4.50577e-006
+Heightened Def Con from 4.62232e-006 to 4.62232e-006
+Heightened Def Con from 4.63887e-006 to 4.63887e-006
+Heightened Def Con from 4.6722e-006 to 4.6722e-006
+Heightened Def Con from 4.80551e-006 to 4.80551e-006
+Heightened Def Con from 4.85546e-006 to 4.85546e-006
+Heightened Def Con from 4.88879e-006 to 4.88879e-006
+Heightened Def Con from 4.92213e-006 to 4.92213e-006
+N-Period=1
+Fourier components of V(uds)
+DC component:22.2222
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	3.000e+07	2.788e+01	1.000e+00	 -128.62°	    0.00°
+Total Harmonic Distortion: 0.000000%(32.774383%)
+
+
+.step amp=2 phi=-150
+N-Period=1
+Fourier components of V(uds)
+DC component:22.1961
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	3.000e+07	2.800e+01	1.000e+00	 -133.02°	    0.00°
+Total Harmonic Distortion: 0.000000%(32.972304%)
+
+.step amp=2.4 phi=-150
+N-Period=1
+Fourier components of V(uds)
+DC component:22.1849
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	3.000e+07	2.803e+01	1.000e+00	 -139.70°	    0.00°
+Total Harmonic Distortion: 0.000000%(32.922183%)
+
+.step amp=2.6 phi=-150
+N-Period=1
+Fourier components of V(uds)
+DC component:22.1278
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	3.000e+07	2.799e+01	1.000e+00	 -141.63°	    0.00°
+Total Harmonic Distortion: 0.000000%(33.083746%)
+
+.step amp=3 phi=-150
+N-Period=1
+Fourier components of V(uds)
+DC component:22.0247
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	3.000e+07	2.790e+01	1.000e+00	 -144.15°	    0.00°
+Total Harmonic Distortion: 0.000000%(33.398418%)
+
+.step amp=1.8 phi=120
+N-Period=1
+Fourier components of V(uds)
+DC component:644.545
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	3.000e+07	1.033e+03	1.000e+00	  154.74°	    0.00°
+Total Harmonic Distortion: 0.000000%(59.150673%)
+
+.step amp=2 phi=120
+N-Period=1
+Fourier components of V(uds)
+DC component:688.523
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	3.000e+07	1.104e+03	1.000e+00	  151.32°	    0.00°
+Total Harmonic Distortion: 0.000000%(59.347547%)
+
+.step amp=2.4 phi=120
+N-Period=1
+Fourier components of V(uds)
+DC component:731.241
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	3.000e+07	1.173e+03	1.000e+00	  145.93°	    0.00°
+Total Harmonic Distortion: 0.000000%(59.414737%)
+
+.step amp=2.6 phi=120
+N-Period=1
+Fourier components of V(uds)
+DC component:743.248
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	3.000e+07	1.192e+03	1.000e+00	  143.98°	    0.00°
+Total Harmonic Distortion: 0.000000%(59.290442%)
+
+.step amp=3 phi=120
+N-Period=1
+Fourier components of V(uds)
+DC component:765.263
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	3.000e+07	1.230e+03	1.000e+00	  141.28°	    0.00°
+Total Harmonic Distortion: 0.000000%(59.817569%)
+
+
+Date: Tue Oct 22 13:06:01 2024
+Total elapsed time: 638.458 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 1447227
+traniter = 1433765
+tranpoints = 201088
+accept = 80309
+rejected = 129613
+matrix size = 135
+fillins = 143
+Matrix Compiler1: 15.77 KB object code size  7.8/5.3/[3.0]
+Matrix Compiler2: 14.33 KB object code size  4.5/6.5/[2.9]
+

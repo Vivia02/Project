@@ -1,0 +1,1 @@
+netlist.add_instructions('.step param Phi_anti %s %s %s' % (Phi_anti_start, Phi_anti_end, Phi_anti_step))

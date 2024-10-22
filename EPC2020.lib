@@ -1,0 +1,93 @@
+*****************************************************************************
+* EPC GaN Power Device Library
+* (C) Copyright Efficient Power Conversion Corporation. All rights reserved.
+* ***********************************************************************
+
+
+
+*****************************************************************************
+.subckt EPC2020 gatein drainin sourcein
+.param aWg=3160 A1=120.8515 k2=2.2881 k3=0.15 rpara=0.0009908 rpara_s_factor=0.26
+ + aITc=0.003822 arTc=-0.0078 k2Tc=0.001 x0_0=1.5736 x0_1=0 x0_1_TC=0
+ + dgs1=4.3e-07 dgs2=2.6e-13 dgs3=0.8 dgs4=0.23
+ + ags1=1.7554e-09 ags2=1.0469e-09 ags3=1.9499 ags4=0.21544
+ + ags5=-3.4239e-14 ags6=-11.708 ags7=1.0562
+ + agd1=4.6777e-15 agd2=5.5597e-11 agd3=-0.12422 agd4=59.856
+ + agd5=3.4899e-10 agd6=-3.7046 agd7=2.4793
+ + agd8=3.052e-12 agd9=-91.363 agd10=28.675
+ + asd1=6.0016e-10 asd2=9.2575e-10 asd3=-17.064 asd4=4.4806
+ + asd5=1.1622e-09 asd6=-0.48089 asd7=34.427 rg_value=0.3
+
+rd drainin drain {((1-rpara_s_factor)*rpara*(1-arTc*(Temp-25)))}
+rs sourcein source {(rpara_s_factor*rpara*(1-arTc*(Temp-25)))}
+rg gatein gate {(rg_value)}
+
+Rcsdconv drain source {100000Meg/aWg}
+Rcgsconv gate source {100000Meg/aWg}
+Rcgdconv gate drain {100000Meg/aWg}
+
+bswitch drain source I=if(v(drain,source)>0,
++	(A1*(1-aITc*(Temp-25))*log(1.0+exp((v(gate,source)-(k2*(1-k2Tc*(Temp-25))))/k3))*
++	v(drain,source)/(1 + x0_0*v(drain,source))),
++	(-A1*(1-aITc*(Temp-25))*log(1.0+exp((v(gate,drain)-(k2*(1-k2Tc*(Temp-25))))/k3))*
++	v(source,drain)/(1 + x0_0*v(source,drain))))
+
+bgsdiode gate source I=if( v(gate,source)>10,
++	(0.125*aWg/1077*(dgs1*(exp((10.0)/dgs3)-1)+dgs2*(exp((10.0)/dgs4)-1))),
++	(0.125*aWg/1077*(dgs1*(exp((v(gate,source))/dgs3)-1)+dgs2*(exp((v(gate,source))/dgs4)-1))))
+
+bgddiode gate drain I=if( v(gate,drain)>10,
++	(0.125*aWg/1077*(dgs1*(exp((10.0)/dgs3)-1)+dgs2*(exp((10.0)/dgs4)-1))),
++	(0.125*aWg/1077*(dgs1*(exp((v(gate,drain))/dgs3)-1)+dgs2*(exp((v(gate,drain))/dgs4)-1))) )
+
+
+C_GS       	gate source  {ags1}  TC=0,0
+C_CGS1     	gate source Q=(0.5*ags2*ags4*log(1+exp((v(gate,source)-ags3)/ags4))+
++	ags5*ags7*log(1+exp((v(source,drain)-ags6)/ags7)) )
+
+C_GD      	gate drain  {agd1}  TC=0,0
+C_CGD1    	gate drain Q=(0.5*ags2*ags4*log(1+exp((v(gate,drain)-ags3)/ags4))+
++	        agd2*agd4*log(1+exp((v(gate,drain)-agd3)/agd4))+
++           agd5*agd7*log(1+exp((v(gate,drain)-agd6)/agd7))+
++           agd8*agd10*log(1+exp((v(gate,drain)-agd9)/agd10)))
+
+C_SD       	source drain  {asd1}  TC=0,0
+C_CSD1	source drain Q=(asd2*asd4*log(1+exp((v(source,drain)-asd3)/asd4))+
++	asd5*asd7*log(1+exp((v(source,drain)-asd6)/asd7)) )
+
+.ends
+
+
+.subckt EPC2020Cap gate drain source
+.param aWg=3160 A1=120.8515 k2=2.2881 k3=0.15 rpara=0.0009908 rpara_s_factor=0.26
+ + aITc=0.003822 arTc=-0.0078 k2Tc=0.001 x0_0=1.5736 x0_1=0 x0_1_TC=0
+ + dgs1=4.3e-07 dgs2=2.6e-13 dgs3=0.8 dgs4=0.23
+ + ags1=1.7554e-09 ags2=1.0469e-09 ags3=1.9499 ags4=0.21544
+ + ags5=-3.4239e-14 ags6=-11.708 ags7=1.0562
+ + agd1=4.6777e-15 agd2=5.5597e-11 agd3=-0.12422 agd4=59.856
+ + agd5=3.4899e-10 agd6=-3.7046 agd7=2.4793
+ + agd8=3.052e-12 agd9=-91.363 agd10=28.675
+ + asd1=6.0016e-10 asd2=9.2575e-10 asd3=-17.064 asd4=4.4806
+ + asd5=1.1622e-09 asd6=-0.48089 asd7=34.427 rg_value=0.3
+
+bswitch drain source I=if(v(drain,source)>0,
++	(A1*(1-aITc*(Temp-25))*log(1.0+exp((v(gate,source)-(k2*(1-k2Tc*(Temp-25))))/k3))*
++	v(drain,source)/(1 + x0_0*v(drain,source))),
++	(-A1*(1-aITc*(Temp-25))*log(1.0+exp((v(gate,drain)-(k2*(1-k2Tc*(Temp-25))))/k3))*
++	v(source,drain)/(1 + x0_0*v(source,drain))))
+
+C_GS       	gate source  {ags1}  TC=0,0
+C_CGS1     	gate source Q=(0.5*ags2*ags4*log(1+exp((v(gate,source)-ags3)/ags4))+
++	ags5*ags7*log(1+exp((v(source,drain)-ags6)/ags7)) )
+
+C_GD      	gate drain  {agd1}  TC=0,0
+C_CGD1    	gate drain Q=(0.5*ags2*ags4*log(1+exp((v(gate,drain)-ags3)/ags4))+
++	        agd2*agd4*log(1+exp((v(gate,drain)-agd3)/agd4))+
++           agd5*agd7*log(1+exp((v(gate,drain)-agd6)/agd7))+
++           agd8*agd10*log(1+exp((v(gate,drain)-agd9)/agd10)))
+
+C_SD       	source drain  {asd1}  TC=0,0
+C_CSD1	source drain Q=(asd2*asd4*log(1+exp((v(source,drain)-asd3)/asd4))+
++	asd5*asd7*log(1+exp((v(source,drain)-asd6)/asd7)) )
+
+.ends

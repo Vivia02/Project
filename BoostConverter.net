@@ -1,0 +1,29 @@
+* C:\Users\vivia\Projekt_MA\von Caroline\Simulationsmodell\BoostConverter.asc
+V1 N005 0 PULSE(0 1 0 5n 5n 500n 1u)
+V2 N003 0 12
+R1 N002 0 25
+R2 N010 N009 1.2k
+R3 N009 0 350
+R4 N007 N006 50
+R5 N006 0 50
+R6 N008 N010 5
+L1 uds N003 3.25µ
+C1 N003 0 10µ
+C2 out 0 12µ Rser=50m Lser=1n IC=24
+L2 out N001 20n Rser=50m
+L3 N004 uds 1n
+V3 0 Vee 20
+V4 Vcc 0 20
+L4 N002 out 1n
+XU4 N007 N009 Vcc Vee N010 NC_01 ADA4870
+XU5 uds N001 uds EPC2020
+XU6 N008 N004 0 EPC2020
+V5 N006 N005 SINE(0 {Amp} 30meg 0 0 {Phi})
+.tran 0 5u 4u
+.step param Amp list 1.8 2.0 2.4 2.6 3.0
+.step param Phi list -150 120
+.four 30meg 1 V(uds)
+.lib C:\Users\vivia\Projekt_MA\von Caroline\Simulationsmodell\ADA4870.cir
+.lib C:\Users\vivia\Projekt_MA\von Caroline\Simulationsmodell\EPC2020.lib
+.backanno
+.end
